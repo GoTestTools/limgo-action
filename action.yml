@@ -1,4 +1,4 @@
-name: 'limgo'
+name: 'limgo-action'
 description: 'Do not let your test coverage drop'
 branding:
   color: orange
