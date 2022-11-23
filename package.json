@@ -1,7 +1,7 @@
 {
-  "name": "gh-action-test",
-  "version": "1.0.0",
-  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
+  "name": "limgo-action",
+  "version": "1.0.1",
+  "description": "This action uses limgo to enforce test coverage thresholds",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node dist/index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/engelmi/gh-action-test.git"
+    "url": "git+https://github.com/GoTestTools/limgo-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/engelmi/gh-action-test/issues"
+    "url": "https://github.com/GoTestTools/limgo-action/issues"
   },
-  "homepage": "https://github.com/engelmi/gh-action-test#readme",
+  "homepage": "https://github.com/GoTestTools/limgo-action#readme",
   "devDependencies": {
     "@types/node": "^18.8.2",
     "@vercel/ncc": "^0.34.0",
