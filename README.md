@@ -23,13 +23,13 @@ jobs:
     steps:
       # Checkout your project with git
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       # Install Go on the VM running the action.
       - name: Set up Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v5
         with:
-          go-version: 1.19
+          go-version: '1.26'
 
       # Run your tests with -coverprofile
       - name: Run tests
@@ -55,7 +55,7 @@ jobs:
       # Optional: 
       # Upload the coverage check results as artifact
       - name: Upload test coverage results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: success() || failure()
         with:
           name: test-coverage-results
